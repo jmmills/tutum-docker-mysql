@@ -11,6 +11,7 @@ ADD supervisord-mysqld.conf /etc/supervisor/conf.d/supervisord-mysqld.conf
 ADD my.cnf /etc/mysql/conf.d/my.cnf
 ADD create_mysql_admin_user.sh /create_mysql_admin_user.sh
 ADD import_sql.sh /import_sql.sh
+ADD profile_d_make_my_cnf.sh /etc/profile.d/my_cnf.sh
 RUN chmod 755 /*.sh
 
 EXPOSE 3306
